@@ -1,0 +1,17 @@
+{
+  "name": "127-motion-documentary",
+  "version": "1.0.0",
+  "private": true,
+  "description": "127 — a code-built motion-design documentary (Canvas2D + Three.js + Web Audio), rendered with Puppeteer.",
+  "scripts": {
+    "render": "node render.js",
+    "render:fast": "node render.js --workers 6 --preset veryfast --crf 20",
+    "preview": "node tools/serve.js",
+    "snap": "node tools/snap.js",
+    "check": "node tools/check.js"
+  },
+  "dependencies": {
+    "puppeteer": "^23.11.1"
+  },
+  "engines": { "node": ">=18" }
+}
